@@ -8,7 +8,7 @@
 
 :root{
     --title: #ECE4EF
-    --descriptions: #D8CEDE
+    --description-info: #D8CEDE
     --description: #9C83A7
 }
 
@@ -43,6 +43,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto -35px;
 }
 
 .card-back:first-child{
@@ -67,8 +68,60 @@ body{
     height: 608px;
     border-radius: 20px;
     box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1), 0px 73px 73px rgba(0, 0, 0, 0.17), 0px 18px 40px rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
-.card-front header{
+.card-info {
+    padding: 48px 133px 60px 40px;
+}
+
+.card-info header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 263px;
+    
+}
+
+.card-infos h2 {
+    font-size: 32px;
+    text-transform: ;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.08em;
+    color: var(--title);
+    
+}
+
+.card-infos span{
+    line-height: 18px;
+    color: var(--description-info);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 198px;
+    margin-top: 60px;
+}
+
+.card-info h4{
+    font-size: 14px;
+    font-weight: 700px;
+    color: var(--description);
+    line-height: 18px;
+    margin-top: 16px;
+}
+
+
+
+.mulher img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
